@@ -3,78 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Μαγγανάς - 100% Μαλαγουζιά | Οινοποιείο Σωτηρίου</title>
+    <title>Μαλαγουζιά | Διατροφική Δήλωση & Συστατικά</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            text-align: center;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
             margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            justify-content: center;
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
+        .card {
+            background: #ffffff;
+            max-width: 480px;
+            width: 100%;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        h2 {
-            color: #7f8c8d;
-            font-weight: normal;
-            font-size: 1.1em;
-            margin-top: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 24px;
+            box-sizing: border-box;
         }
         .label-img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             border-radius: 8px;
-            margin: 20px 0;
+            margin-bottom: 24px;
+            display: block;
         }
-        .details {
+        h2 {
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #212529;
+            padding-bottom: 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 8px 4px;
+            border-bottom: 1px solid #e9ecef;
             text-align: left;
-            background: #f1f5f8;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-top: 20px;
         }
-        .details p {
-            margin: 8px 0;
-            line-height: 1.5;
+        th {
+            font-weight: 600;
         }
-        .footer {
-            margin-top: 25px;
+        .sub-item {
+            padding-left: 18px;
+            color: #495057;
             font-size: 0.9em;
-            color: #777;
+        }
+        .ingredients {
+            background-color: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            line-height: 1.5;
+            border: 1px solid #e9ecef;
+        }
+        .ingredients h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>ΜΑΓΓΑΝΑΣ</h1>
-        <h2>100% Μαλαγουζιά — Λευκός Ξηρός</h2>
-        
+
+    <div class="card">
         <!-- Εικόνα Ετικέτας -->
         <img src="label.jpg" alt="Ετικέτα Μαλαγουζιά" class="label-img">
 
-        <div class="details">
-            <p><strong>Ποικιλία:</strong> 100% Μαλαγουζιά</p>
-            <p><strong>Αλκοολικός Τίτλος:</strong> 13.1% vol</p>
-            <p><strong>Οινοποίηση:</strong> Ζύμωση σε ανοξείδωτες δεξαμενές με σύντομη προζυμωτική εκχύλιση. Ωρίμανση πάνω σε φίνες οινολάσπες.</p>
-            <p><strong>Χαρακτήρας:</strong> Έντονη αρωματική ένταση με χαρακτηριστικά τροπικά και βοτανικά αρώματα καθώς και πλούσιο σώμα.</p>
-            <p><strong>Πώμα:</strong> Βιδωτό</p>
-            <p><strong>Περιοχή:</strong> Λεσίνι Μεσολογγίου</p>
-        </div>
+        <!-- Πίνακας Διατροφικών Στοιχείων -->
+        <h2>Διατροφικά Στοιχεία / Nutrition Declaration</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ανά 100 ml</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ενέργεια / Energy</strong></td>
+                    <td><strong>307 kJ / 74 kcal</strong></td>
+                </tr>
+                <tr>
+                    <td>Λιπαρά / Fat</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td class="sub-item">— εκ των οποίων Κορεσμένα / of which Saturates</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td>Υδατάνθρακες / Carbohydrate</td>
+                    <td>0.5 g</td>
+                </tr>
+                <tr>
+                    <td class="sub-item">— εκ των οποίων Σάκχαρα / of which Sugars</td>
+                    <td>0.5 g</td>
+                </tr>
+                <tr>
+                    <td>Πρωτεΐνες / Protein</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td>Αλάτι / Salt</td>
+                    <td>0 g</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="footer">
-            <p><strong>Οινοποιείο Σωτηρίου</strong></p>
+        <!-- Συστατικά -->
+        <div class="ingredients">
+            <h3>Συστατικά / Ingredients</h3>
+            <p>Σταφύλια, ρυθμιστές οξύτητας: τρυγικό οξύ, μηλικό οξύ, συντηρητικά και αντιοξειδωτικά: θειώδη, σταθεροποιητές: καρβοξυμεθυλοκυτταρίνη. Εμφιαλωμένο σε προστατευτική ατμόσφαιρα, Διοξείδιο του άνθρακα, Άζωτο.</p>
         </div>
     </div>
+
 </body>
 </html>
